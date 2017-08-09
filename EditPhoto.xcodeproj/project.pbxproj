@@ -11,8 +11,14 @@
 		5A0296F01F3331FB00705C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0296EF1F3331FB00705C10 /* ViewController.swift */; };
 		5A0296F31F3331FB00705C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0296F11F3331FB00705C10 /* Main.storyboard */; };
 		5A0296F61F3331FB00705C10 /* EditPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A0296F41F3331FB00705C10 /* EditPhoto.xcdatamodeld */; };
-		5A0296F81F3331FB00705C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0296F71F3331FB00705C10 /* Assets.xcassets */; };
+		5A0296F81F3331FB00705C10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0296F71F3331FB00705C10 /* Images.xcassets */; };
 		5A0296FB1F3331FB00705C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0296F91F3331FB00705C10 /* LaunchScreen.storyboard */; };
+		5A0297081F33348300705C10 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0297071F33348300705C10 /* CameraViewController.swift */; };
+		5A02970A1F33349700705C10 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0297091F33349700705C10 /* CameraViewController.xib */; };
+		5A33E31B1F3AD1AB005A5C9F /* Macrodef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E31A1F3AD1AB005A5C9F /* Macrodef.swift */; };
+		5A33E31E1F3ADB76005A5C9F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33E31D1F3ADB76005A5C9F /* LaunchViewController.swift */; };
+		5AFA9ECE1F382DB300F091B3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA9ECD1F382DB300F091B3 /* BaseNavigationController.swift */; };
+		5AFF2A201F34567900B5D381 /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF2A1F1F34567900B5D381 /* CameraManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +27,17 @@
 		5A0296EF1F3331FB00705C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A0296F21F3331FB00705C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A0296F51F3331FB00705C10 /* EditPhoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EditPhoto.xcdatamodel; sourceTree = "<group>"; };
-		5A0296F71F3331FB00705C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A0296F71F3331FB00705C10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A0296FA1F3331FB00705C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0296FC1F3331FB00705C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0297071F33348300705C10 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5A0297091F33349700705C10 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		5A33E31A1F3AD1AB005A5C9F /* Macrodef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macrodef.swift; sourceTree = "<group>"; };
+		5A33E31D1F3ADB76005A5C9F /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		5AFA9ECD1F382DB300F091B3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		5AFF2A1D1F34567900B5D381 /* EditPhoto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditPhoto-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AFF2A1E1F34567900B5D381 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		5AFF2A1F1F34567900B5D381 /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,103 @@
 		5A0296EC1F3331FB00705C10 /* EditPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				5A0297021F33340700705C10 /* Class */,
 				5A0296ED1F3331FB00705C10 /* AppDelegate.swift */,
 				5A0296EF1F3331FB00705C10 /* ViewController.swift */,
 				5A0296F11F3331FB00705C10 /* Main.storyboard */,
-				5A0296F71F3331FB00705C10 /* Assets.xcassets */,
+				5A0296F71F3331FB00705C10 /* Images.xcassets */,
 				5A0296F91F3331FB00705C10 /* LaunchScreen.storyboard */,
 				5A0296FC1F3331FB00705C10 /* Info.plist */,
 				5A0296F41F3331FB00705C10 /* EditPhoto.xcdatamodeld */,
 			);
 			path = EditPhoto;
+			sourceTree = "<group>";
+		};
+		5A0297021F33340700705C10 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E3191F3ACD76005A5C9F /* Resource */,
+				5AFF2A1B1F34563300B5D381 /* Libraries */,
+				5A0297051F33343300705C10 /* Controller */,
+				5A0297041F33342400705C10 /* View */,
+				5A0297031F33341600705C10 /* Model */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5A0297031F33341600705C10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A0297041F33342400705C10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E31C1F3ADAED005A5C9F /* Launch View */,
+				5A0297061F33345C00705C10 /* Camera View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A0297051F33343300705C10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AFA9ECC1F382D8300F091B3 /* Base Navigation Controller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A0297061F33345C00705C10 /* Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				5A0297071F33348300705C10 /* CameraViewController.swift */,
+				5A0297091F33349700705C10 /* CameraViewController.xib */,
+			);
+			path = "Camera View";
+			sourceTree = "<group>";
+		};
+		5A33E3191F3ACD76005A5C9F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E31A1F3AD1AB005A5C9F /* Macrodef.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5A33E31C1F3ADAED005A5C9F /* Launch View */ = {
+			isa = PBXGroup;
+			children = (
+				5A33E31D1F3ADB76005A5C9F /* LaunchViewController.swift */,
+			);
+			path = "Launch View";
+			sourceTree = "<group>";
+		};
+		5AFA9ECC1F382D8300F091B3 /* Base Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AFA9ECD1F382DB300F091B3 /* BaseNavigationController.swift */,
+			);
+			path = "Base Navigation Controller";
+			sourceTree = "<group>";
+		};
+		5AFF2A1B1F34563300B5D381 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF2A1C1F34565000B5D381 /* Camera Manager */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		5AFF2A1C1F34565000B5D381 /* Camera Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF2A1E1F34567900B5D381 /* CameraManager.h */,
+				5AFF2A1F1F34567900B5D381 /* CameraManager.m */,
+				5AFF2A1D1F34567900B5D381 /* EditPhoto-Bridging-Header.h */,
+			);
+			path = "Camera Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +202,7 @@
 					5A0296E91F3331FB00705C10 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 7A9JA8PNZH;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,7 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0296FB1F3331FB00705C10 /* LaunchScreen.storyboard in Resources */,
-				5A0296F81F3331FB00705C10 /* Assets.xcassets in Resources */,
+				5A02970A1F33349700705C10 /* CameraViewController.xib in Resources */,
+				5A0296F81F3331FB00705C10 /* Images.xcassets in Resources */,
 				5A0296F31F3331FB00705C10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0296F61F3331FB00705C10 /* EditPhoto.xcdatamodeld in Sources */,
+				5A0297081F33348300705C10 /* CameraViewController.swift in Sources */,
+				5AFA9ECE1F382DB300F091B3 /* BaseNavigationController.swift in Sources */,
 				5A0296F01F3331FB00705C10 /* ViewController.swift in Sources */,
+				5A33E31B1F3AD1AB005A5C9F /* Macrodef.swift in Sources */,
 				5A0296EE1F3331FB00705C10 /* AppDelegate.swift in Sources */,
+				5AFF2A201F34567900B5D381 /* CameraManager.m in Sources */,
+				5A33E31E1F3ADB76005A5C9F /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +376,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = EditPhoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EditPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EditPhoto/Class/Libraries/Camera Manager/EditPhoto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,11 +392,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = EditPhoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EditPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EditPhoto/Class/Libraries/Camera Manager/EditPhoto-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +422,7 @@
 				5A0297011F3331FB00705C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
